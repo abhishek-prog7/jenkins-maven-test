@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <dependencies>
         <dependency>
-            <groupId>com.jenkins.maven</groupId>
+            <groupId>com.learning.jenkins</groupId>
             <artifactId>test-maven-dependency</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>

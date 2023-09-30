@@ -8,7 +8,7 @@ public class Main {
         System.out.println("This is my jenkins project");
         System.out.println("I am testing CI");
         messageSource message = new messageSource();
-        message.getMessage();
+        System.out.println(message.getMessage());
 
     }
 }
