@@ -39,11 +39,13 @@ pipeline {
           stage('install')
         {
             steps{
-                dir('${env.WORKSPACE}')
-                {
+		sh "cd ${WORKSPACE}/src"
+		sh "pwd"
+		sh "cd ${WORKSPACE}"
+		sh "pwd"
                 sh " mvn install "
 
-                }
+                
             }
         }
 
