@@ -3,10 +3,31 @@ pipeline {
     agent {label 'master'}
 
     stages{
+
+         stage('cleanup')
+        {
+            steps{
+                sh " mvn clean "
+            }
+        }
         stage('compile')
         {
             steps{
-                pwd
+                sh " mvn compile "
+            }
+        }
+
+        stage('package')
+        {
+            steps{
+                sh " mvn package "
+            }
+        }
+
+          stage('install')
+        {
+            steps{
+                sh " mvn install "
             }
         }
 
