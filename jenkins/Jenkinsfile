@@ -10,6 +10,7 @@ pipeline {
                 dir('src')
                 {
                 sh " pwd "
+		sh "env" 
 
                 }
             }
