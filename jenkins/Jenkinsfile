@@ -48,12 +48,12 @@ pipeline {
 
           stage('test')
         {
-            when { expression{ return ($params.isTest)}
+            when { expression { return (params.isTest == true)} }
             steps{
-                sh " mvn test"
+                sh "mvn test"
             }
         }
-    }
+		}
     }
 
 }
