@@ -1,5 +1,5 @@
 pipeline {
-    parameters{booleanParam(name: 'isTest, defaultValue: false, description: 'set this if you wanted to run test stage')}
+    parameters{booleanParam(name: 'isTest', defaultValue: false, description: "set this if you wanted to run test stage")}
     agent {label 'master'}
 
     stages{
