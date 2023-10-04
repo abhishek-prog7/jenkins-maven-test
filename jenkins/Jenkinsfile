@@ -39,7 +39,7 @@ pipeline {
           stage('install')
         {
             steps{
-                dir('${WORKSPACE}')
+                dir('${env.WORKSPACE}')
                 {
                 sh " mvn install "
 
