@@ -7,7 +7,7 @@ pipeline {
           stage('testingDirectory')
         {
             steps{
-                dir($env.WORKSPACE/src)
+                dir('$env.WORKSPACE/src')
                 {
                 sh " pwd "
 
